@@ -1,0 +1,47 @@
+@use '/styles/mixin' as mixin;
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  padding: 10px;
+
+  .header {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    .searchBar {
+      height: 40px;
+      width: 1200px;
+    }
+  }
+  h1 {
+    padding: 50px;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .box {
+    padding-top: 2rem;
+    column-count: 3;
+
+@include mixin.respond-below(lg) {
+  column-count: 2;
+}
+@include mixin.respond-below(sm) {
+  column-count: 1;
+}
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}

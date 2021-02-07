@@ -1,0 +1,9 @@
+@use '/styles/normalize';
+@use '/styles/mixin';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+}

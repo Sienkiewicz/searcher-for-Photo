@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 20px;
+  break-inside: avoid-column;
+
+  img {
+    margin: 10px;
+      cursor: zoom-in;
+  }
+
+.tags {
+display: flex;
+cursor: default;
+}
+
+  .tag {
+margin: 5px;
+line-height: 1.2rem;
+color: #a7a7a7;
+padding: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

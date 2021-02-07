@@ -1,0 +1,44 @@
+@use '/styles/mixin' as mixin;
+.mat {
+  position: fixed;
+  margin: 50px 130px 0 130px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 30px 50px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mixin.respond-below(md) {
+    margin: 0;
+    padding: 5px 5px;
+  }
+
+  .name,
+  .location {
+    padding: 5px;
+    text-align: right;
+  }
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .mobileCloseIcon {
+    color: #000;
+     @include mixin.respond-between(md) {
+    display: none;
+  }
+  }
+}
+
+.svg {
+  height: 100px;
+  filter: invert(91%) sepia(64%) saturate(244%) hue-rotate(224deg)
+    brightness(109%) contrast(107%);
+}
+
+
